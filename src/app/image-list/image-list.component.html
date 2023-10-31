@@ -1,0 +1,15 @@
+<div class="d-flex flex-wrap">
+  <div *ngFor="let image of imageList" class="card mb-3 my-custom-card mx-2" style="max-width: 400px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img [src]="image.imageUrl" class="card-img-top" alt="{{image.title}}">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{image.title}}</h5>
+          <p class="card-text">{{image.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

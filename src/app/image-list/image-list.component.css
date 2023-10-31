@@ -1,0 +1,22 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.card {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  /* Agrega un contenedor que utilizará flexbox */
+.my-custom-card-container {
+    display: flex;
+    flex-wrap: nowrap; /* Para que las cards no se envuelvan a la siguiente línea */
+    justify-content: space-between; /* Para distribuir las cards de manera uniforme en la fila */
+  }
+  
+  /* Estilos para cada card */
+  .my-custom-card {
+    max-width: 540px;
+    margin-right: 10px; /* Margen entre las cards */
+  }
+  
